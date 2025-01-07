@@ -1,0 +1,43 @@
+{
+  "title" : "KYPO_test",
+  "description" : "A test training for shit and giggles",
+  "prerequisites" : [ ],
+  "outcomes" : [ ],
+  "state" : "UNRELEASED",
+  "show_stepper_bar" : true,
+  "levels" : [ {
+    "title" : "Introduction level",
+    "level_type" : "INFO_LEVEL",
+    "order" : 0,
+    "estimated_duration" : 0,
+    "minimal_possible_solve_time" : null,
+    "content" : "Welcome to \"Shit and giggles\".\nThis is a test training with nothing.\nJust potentially accessible virtual machines, with no gui, to look at."
+  }, {
+    "title" : "Title of training level",
+    "level_type" : "TRAINING_LEVEL",
+    "order" : 1,
+    "estimated_duration" : 3,
+    "minimal_possible_solve_time" : 5,
+    "answer" : "Secret answer",
+    "answer_variable_name" : null,
+    "content" : "What is the name of this training?",
+    "solution" : "**shit and giggles**\n$(shit and giggles)\n",
+    "solution_penalized" : true,
+    "hints" : [ {
+      "title" : "New hint",
+      "content" : "*its shit and giggles*",
+      "hint_penalty" : 3,
+      "order" : 0
+    } ],
+    "incorrect_answer_limit" : 100,
+    "attachments" : [ ],
+    "max_score" : 100,
+    "variant_answers" : false,
+    "reference_solution" : [ ],
+    "mitre_techniques" : [ ],
+    "expected_commands" : [ ],
+    "commands_required" : true
+  } ],
+  "estimated_duration" : 3,
+  "variant_sandboxes" : false
+}
