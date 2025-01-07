@@ -1,9 +1,21 @@
-name: junior-hacker-sandbox
+name: KYPO_test
 
 hosts:
   - name: attacker
     base_box: 
       image: kali
+      mgmt_user: debian
+    flavor: csirtmu.tiny1x2
+
+  - name: server
+    base_box:
+      image: debian-10
+      mgmt_user: debian
+    flavor: csirtmu.tiny1x2
+
+  - name: client
+    base_box: 
+      image: debian-10
       mgmt_user: debian
     flavor: csirtmu.tiny1x2
 
@@ -29,6 +41,14 @@ net_mappings:
     - host: attacker
       network: attacker-switch
       ip: 10.1.27.23
+
+    - host: server
+      network: target-switch
+      ip: 10.1.26.9
+
+    - host: client
+      network: target-switch
+      ip: 10.1.26.4
 
 router_mappings:
     - router: router
